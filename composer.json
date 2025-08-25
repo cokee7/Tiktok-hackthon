@@ -1,0 +1,21 @@
+{
+    "name": "hackathon/review-system-backend",
+    "description": "Hackathon Review System - PHP Backend API",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ReviewSystem\\": "src/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S 0.0.0.0:8000 -t public/",
+        "test": "echo 'No tests configured yet'"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
+

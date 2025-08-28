@@ -1,0 +1,36 @@
+TikTok/
+├── data/           # 数据目录
+│   ├── raw/        # 存放原始数据，永远不要修改
+│   ├── processed/  # 存放处理后的数据
+│   └── external/   # 存放第三方数据源
+│
+├── notebooks/      # 用于探索性数据分析（EDA）和实验的 Jupyter Notebooks
+│   └── 01_exploratory_analysis.ipynb
+│
+├── src/            # 源代码目录（核心！）
+│   ├── __init__.py   # 让 Python 将 src 视为一个包
+│   ├── data/         # 数据获取和预处理的模块
+│   │   ├── __init__.py
+│   │   └── make_dataset.py
+│   ├── features/     # 特征工程的模块
+│   │   ├── __init__.py
+│   │   └── build_features.py
+│   ├── models/       # 模型定义和训练的模块
+│   │   ├── __init__.py
+│   │   ├── train_model.py
+│   │   └── assessment_model.py
+│   └── visualization/ # 可视化工具
+│       ├── __init__.py
+│       └── visualize.py
+│
+├── models/          # 保存训练好的模型文件（.pkl, .h5 等）
+├── reports/         # 保存生成的报告、图表（如图像、PDF）
+│   └── figures/     # 保存图片
+│
+├── requirements.txt # 项目依赖列表
+├── README.md        # 项目说明文档
+└── train.py     # 主要训练脚本
+└── assessment.py     # 部署模型应用的文件
+
+
+
